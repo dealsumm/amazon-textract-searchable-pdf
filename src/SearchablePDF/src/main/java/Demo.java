@@ -15,7 +15,7 @@ public class Demo {
 //
 //            //Generate searchable PDF from pdf in Amazon S3 bucket
             DemoPdfFromS3Pdf s3Pdf = new DemoPdfFromS3Pdf();
-            s3Pdf.run("dealsumm-textract-temp-us", "myfile.pdf", "last_spdf.pdf");
+            s3Pdf.run("dealsumm-textract-temp-us", args[0], "last_spdf.pdf");
 //
 //            //Generate searchable PDF from pdf in Amazon S3 bucket
 //            //(by adding text to the input pdf document)
