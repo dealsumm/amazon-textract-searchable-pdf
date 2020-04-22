@@ -2,20 +2,20 @@ public class Demo {
     public static void main(String args[]) {
         try {
             //Generate searchable PDF from local image
-            DemoPdfFromLocalImage localImage = new DemoPdfFromLocalImage();
-            localImage.run("./documents/SampleInput.png", "./documents/SampleOutput.pdf");
-
+//             DemoPdfFromLocalImage localImage = new DemoPdfFromLocalImage();
+//            localImage.run("./documents/SampleInput.png", "./documents/SampleOutput.pdf");
+//
 //            //Generate searchable PDF from local pdf
 //            DemoPdfFromLocalPdf localPdf = new DemoPdfFromLocalPdf();
-//            localPdf.run("./documents/SampleInput.pdf", "./documents/SampleOutput.pdf");
+//            localPdf.run("./documents/input.pdf", "./documents/spdf.pdf");
 //
 //            //Generate searchable PDF from image in Amazon S3 bucket
 //            DemoPdfFromS3Image s3Image = new DemoPdfFromS3Image();
 //            s3Image.run("ki-textract-demo-docs", "SampleInput.png", "SampleOutput.pdf");
 //
 //            //Generate searchable PDF from pdf in Amazon S3 bucket
-//            DemoPdfFromS3Pdf s3Pdf = new DemoPdfFromS3Pdf();
-//            s3Pdf.run("ki-textract-demo-docs", "SampleInput.pdf", "SampleOutput.pdf");
+            DemoPdfFromS3Pdf s3Pdf = new DemoPdfFromS3Pdf();
+            s3Pdf.run("dealsumm-textract-temp-us", "myfile.pdf", "last_spdf.pdf");
 //
 //            //Generate searchable PDF from pdf in Amazon S3 bucket
 //            //(by adding text to the input pdf document)
