@@ -1,7 +1,7 @@
 DemoPdfFromS3PdfAppend.class
 DemoPdfFromLocalImage.class
-DemoPdfFromLocalPdf.class
 com/amazon/textract/pdf/FontInfo.class
+DemoPdfFromLocalPdf.class
 DemoLambda.class
 Demo.class
 com/amazon/textract/pdf/ImageType.class
