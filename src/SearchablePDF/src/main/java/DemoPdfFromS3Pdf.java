@@ -36,7 +36,7 @@ public class DemoPdfFromS3Pdf {
         PDFRenderer pdfRenderer = new PDFRenderer(inputDocument);
         BufferedImage image = null;
         for (int page = 0; page < inputDocument.getNumberOfPages(); ++page) {
-            image = pdfRenderer.renderImageWithDPI(page, 300, org.apache.pdfbox.rendering.ImageType.RGB);
+            image = pdfRenderer.renderImageWithDPI(page, 100, org.apache.pdfbox.rendering.ImageType.RGB);
 
             pdfDocument.addPage(image, ImageType.JPEG, linesInPages.get(page));
 
